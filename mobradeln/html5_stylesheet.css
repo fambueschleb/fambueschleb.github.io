@@ -5,17 +5,17 @@ body {background-color:#ffffff;
 	color:#000000;
 	font-family:Verdana, Geneva, sans-serif;
 	margin:0px;}
-	
+
 body a {color:#0066ff;}
 
-header {background-color:#63adff;
+header {background-color:#64e379;
 	color: #ffffff;
 	font-size: xx-large;
 	font-style:italic;
 	font-weight:bolder;
 	padding: 10px;
 	text-align:center;}
-	
+
 #hilfscontainer {margin:0px auto;
 	 max-width:1024px;}
 
@@ -34,10 +34,10 @@ main {background-color:#ffffff;
 	color: #000000;
 	float:left;
 	width:75%;}
-	
-main h1 {font-size: xx-large;
+
+main h1 {font-size: x-large;
  	margin-bottom: 10px;
-	margin-top: 0px;}		
+	margin-top: 0px;}
 
 article {border: 1px solid grey;
 	border-radius:10px;
@@ -47,7 +47,7 @@ article {border: 1px solid grey;
 	padding-right:20px;
 	padding-top:10px;}
 
-footer {background-color:#63adff;
+footer {background-color:#64e379;
 	clear:left;
 	color:#ffffff;
 	font-size:large;
@@ -60,7 +60,7 @@ footer {background-color:#63adff;
 
 img {max-width:100%; height:auto; }
 
-ul {margin:0; 
+ul {margin:0;
     padding:0;
     width:100%;
     list-style-type:none;
@@ -68,16 +68,15 @@ ul {margin:0;
 }
 
 ul li a {text-decoration:none;
-    color:#ffffff; 
+    color:#ffffff;
     padding:10.5px 11px;
 	margin-bottom:10px;
-    background-color:#63adff;
+    background-color:#48a262;
     display:block;
 	border-radius:10px;
 }
 
 ul li a:visited {color:#ffffff;}
- 
+
 ul li a:hover, ul li .current {color:black;
     background-color:yellow;}
-	

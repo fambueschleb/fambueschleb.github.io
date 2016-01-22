@@ -8,7 +8,7 @@ body {background-color:#ffffff;
 
 body a {color:#0066ff;}
 
-header {background-color:#63adff;
+header {background-color:#64e379;
 	color: #ffffff;
 	font-size: x-large;
 	font-style:italic;
@@ -32,7 +32,7 @@ main {background-color:#ffffff;
 	color: #000000;
 	width:100%;}
 
-main h1 {font-size: xx-large;
+main h1 {font-size: x-large;
  	margin-bottom: 1px;
 	margin-top: 0px;}
 
@@ -44,7 +44,7 @@ article {border: 1px solid grey;
 	padding-right:20px;
 	padding-top:1px;}
 
-footer {background-color:#63adff;
+footer {background-color:#64e379;
 	color:#ffffff;
 	font-size:large;
 	font-style:italic;
@@ -68,7 +68,7 @@ ul li a {
     color:white;
     padding:3px 3px;
 	margin-bottom:5px;
-    background-color:#63adff;
+    background-color:#48a262;
     display:block;
 	border-radius:10px;
 }
