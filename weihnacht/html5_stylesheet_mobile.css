@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background-color:#ffffff;
+	color:#000000;
+	font-family:Verdana, Geneva, sans-serif;
+	margin:0px;}
+
+body a {color:#0066ff;}
+
+header {background-color:#64e379;
+	color: #ffffff;
+	font-size: x-large;
+	font-style:italic;
+	font-weight:bolder;
+	padding: 10px;
+	text-align:center;}
+
+#hilfscontainer{width: 100%;}
+
+aside {text-align:center;
+	width:100%;}
+
+nav {margin:5px;
+	padding-bottom:1px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:1px;
+	text-align:center;}
+
+main {background-color:#ffffff;
+	color: #000000;
+	width:100%;}
+
+main h1 {font-size: x-large;
+ 	margin-bottom: 1px;
+	margin-top: 0px;}
+
+article {border: 1px solid grey;
+	border-radius:10px;
+	margin:1px;
+	padding-bottom:1px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:1px;}
+
+footer {background-color:#64e379;
+	color:#ffffff;
+	font-size:large;
+	font-style:italic;
+	font-weight:bolder;
+	padding-bottom:10px;
+	padding-top:10px;
+	text-align:center;
+	width: 100%;}
+
+img {max-width:100%; height:auto; }
+
+ul {margin:0;
+    padding:0;
+    width:100%;
+    list-style-type:none;
+	font-size:medium;
+}
+
+ul li a {
+    text-decoration:none;
+    color:white;
+    padding:3px 3px;
+	margin-bottom:5px;
+    background-color:#48a262;
+    display:block;
+	border-radius:10px;
+}
+
+ul li a:visited {color: white;}
+
+ul li a:hover, ul li .current {color: black;
+    background-color: yellow;}
