@@ -17,7 +17,7 @@ header {background-color:#64e379;
 	padding: 10px;
 	text-align:center;}
 
-#hilfscontainer{width: 100%;}
+#hilfscontainer{width: 100%; max-width:240px;}
 
 aside {text-align:center;
 	width:100%;}
