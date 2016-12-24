@@ -39,8 +39,7 @@ main h1 {font-size: x-large;
  	margin-bottom: 10px;
 	margin-top: 0px;}
 
-article {border: 1px solid grey;
-	border-radius:10px;
+article {
 	margin:20px;
 	padding-bottom:10px;
 	padding-left:20px;
