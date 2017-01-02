@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Weihnacht2</title>
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="stylesheet" media="(max-width: 640px)" href="html5_stylesheet_mobile.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="html5_stylesheet.css">
+<link rel="stylesheet" media="print" href="print.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+var vid = document.getElementById('vid');
+var source = document.getElementById('cvid');
+var src = ['http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_50mb.mp4', 'http://vjs.zencdn.net/v/oceans.mp4'];
+var s = 0;
+
+document.getElementById('btn').onclick = function(){
+
+  // change the <source> 's src
+  cvid.src = src[++s%src.length];
+    cvid.src = src[++s%src.length];
+  // ask the <video> to load this new source
+  vid.load();
+
+  // could also be
+  // cvid.parentNode.load();
+
+  }
+  function myFunction() {
+      document.getElementById("demo").innerHTML.src = "../mobradeln/wald4.mp4";
+      video.load();
+  }
+
+  var video = document.getElementById('video');
+  var source = document.createElement('source');
+
+  source.setAttribute('src', 'http://www.tools4movies.com/trailers/1012/Kill%20Bill%20Vol.3.mp4');
+
+  video.appendChild(source);
+  video.play();
+
+  setTimeout(function() {
+      video.pause();
+
+     source.setAttribute('src', 'http://www.tools4movies.com/trailers/1012/Despicable%20Me%202.mp4');
+
+      video.load();
+      video.play();
+  }, 3000);
+
+</script>
+
+</head>
+
+<body>
+  <header>Wir wünschen allen<br>
+  Verwandten und Freunden<br>
+  ein schönes Weihnachtsfest<br>
+  und ein gesundes neues Jahr<br></header>
+
+<div id="hilfscontainer">
+
+<aside>
+<nav>
+<ul>
+  <li><a href="index.html">Startseite</a></li>
+  <li><button onclick="myFunction()">switch video source</button>button</li>
+</ul>
+</nav>
+</aside>
+
+<main>
+<article>
+<video id="video" width="320" height="240"></video>
+  <button onclick="myFunction()">switch video source</button><br>
+  <video controls muted autoplay id="video">
+  <source id="source" src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+  </video>
+
+    <video controls muted autoplay id="vid">
+    <source id="cvid" src="../mobradeln/wald4.mp4" type="video/mp4">
+    </video>
+
+    <video controls muted autoplay id="vid">
+    <source id="cvid" src="../weihnacht/kempe.mp4" type="video/mp4">
+    </video>
+
+    <video controls muted autoplay id="vid">
+    <source id="cvid" src="../weihnacht/weih.mp4" type="video/mp4">
+    </video>
+
+  <p id="demo">JavaScript can change HTML content.</p>
+
+  <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello 1!'">Hello 1</button>
+  <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello 2!'">Hello 2</button>
+
+  <p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+  <button onclick="document.getElementById('myImage').src='bus1.jpg'">Turn on the light</button>
+
+  <img id="myImage" src="bus1.jpg" style="width:100px">
+
+  <button onclick="document.getElementById('myImage').src='bus2.jpg'">Turn off the light</button>
+
+
+  <button onclick="document.getElementById('myvideo').src='../weihnacht/kempe.mp4'">Video Kempe</button>
+
+<!--  <img id="myImage" src="pic_bulboff.gif" style="width:100px">-->
+
+  <button onclick="document.getElementById('myvideo').src='../weihnacht/weih.mp4'">Video Weih</button>
+
+  <iframe src="
+  https://drive.google.com/file/d/1YukEZ6YKbC2jNgM_TqRjXJYtgJR2n8pxKA/preview"
+  width="640" height="384"></iframe>
+
+  <video controls="controls">
+  <source id="myvideo" src="../weihnacht/weih.mp4" type='video/mp4'/>
+  </video>
+
+</article>
+</main>
+
+</div>
+
+<footer>*Brigitte und Michael*</footer>
+
+</body>
+</html>

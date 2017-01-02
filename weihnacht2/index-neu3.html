@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Weihnacht2</title>
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="stylesheet" media="(max-width: 640px)" href="html5_stylesheet_mobile.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="html5_stylesheet.css">
+<link rel="stylesheet" media="print" href="print.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+
+  <header>Video player<br></header>
+
+<div id="hilfscontainer">
+
+<aside>
+<nav>
+<ul>
+  <li><a  href="">select Video</a></li>
+  <li><button onclick="changevid(0)">Weihnacht</button></li>
+  <li><button onclick="changevid(1)">Kempe</button></li>
+</ul>
+</nav>
+</aside>
+
+<main>
+<article>
+
+    <video id="video1" width="420">
+      <source src="" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <li><button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig(560)">Big</button>
+    <button onclick="makeBig(420)">Normal</button>
+    <button onclick="makeBig(320)">Small</button>
+    </li>
+    <script>
+    var v = new Array();
+
+    v[0] = ["../weihnacht/weih.mp4"];
+    v[1] = ["../weihnacht/kempe.mp4"];
+
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+
+    function changevid(n) {myVideo.src = v[n];}
+
+    function makeBig(n) {myVideo.width = n;}
+    </script>
+
+</article>
+</main>
+
+</div>
+
+<footer>mb</footer>
+
+
+</body>
+</html>
