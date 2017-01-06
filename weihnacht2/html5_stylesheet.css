@@ -20,6 +20,31 @@ header {background-color:#008200;
 #hilfscontainer {margin:0px auto;
 	 max-width:1024px;}
 
+#bot {width:100px;
+	height:20px}
+
+button {background-color:#2d8f7b;
+	color: #ffffff;
+	border-radius:10px;
+	width:150px;
+	height:20px}
+
+ul li button:visited {color:#ffffff;}
+
+ul li button:hover, ul li .current {color:black;
+	    background-color:yellow;}
+
+#fn {background-color:#b5b5b5;
+	clear:left;
+	color:#ffffff;
+	font-size:small;
+	font-style:italic;
+	font-weight:bolder;
+	padding-bottom:10px;
+	padding-top:10px;
+	text-align:center;
+	width: 100%;}
+
 aside {float:left;
 	text-align:center;
 	width:25%;}

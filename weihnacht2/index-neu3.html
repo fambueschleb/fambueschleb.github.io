@@ -19,8 +19,8 @@
 
 <aside>
 <nav>
+
 <ul>
-  <li><a  href="">select Video</a></li>
   <li><button onclick="changevid(0)">Weihnacht</button></li>
   <li><button onclick="changevid(1)">Kempe</button></li>
   <li><button onclick="changevid(2)">gdrive 0</button></li>
@@ -28,22 +28,40 @@
   <li><button onclick="changevid(4)">gdrive 2</button></li>
   <li><button onclick="changevid(5)">gdrive 3</button></li>
   <li><button onclick="changevid(6)">gdrive 4</button></li>
+  <li><button onclick="changevid(7)">gdrive 5</button></li>
+  <li><button onclick="changevid(8)">gdrive 6</button></li>
+  <li><button onclick="changevid(9)">gdrive 7</button></li>
+  <li><button onclick="changevid(10)">gdrive 8</button></li>
+  <li><button onclick="changevid(11)">gdrive 9</button></li>
+  <li><button onclick="changevid(12)">gdrive 10</button></li>
+  <li><button onclick="changevid(13)">gdrive 11</button></li>
+  <li><button onclick="changevid(14)">gdrive 12</button></li>
+  <li><button onclick="changevid(15)">gdrive 13</button></li>
+  <li><button onclick="changevid(16)">gdrive 14</button></li>
 </ul>
 </nav>
 </aside>
 
 <main>
 <article>
+    <p id="fn">filename</p>
+
+    <ul>
+        <li>
+        <button id="bot" onclick="playPause()">Play/Pause</button>
+        <button id="bot" onclick="makeBig(560)">Big</button>
+        <button id="bot" onclick="makeBig(420)">Normal</button>
+        <button id="bot" onclick="makeBig(320)">Small</button>
+        </li>
+    </ul>
+
+    <br>
 
     <video id="video1" width="420">
       <source src="" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <li><button onclick="playPause()">Play/Pause</button>
-    <button onclick="makeBig(560)">Big</button>
-    <button onclick="makeBig(420)">Normal</button>
-    <button onclick="makeBig(320)">Small</button>
-    </li>
+
     <script>
     var v = new Array();
     var prev = "https://drive.google.com/uc?export=download&id=";
@@ -51,10 +69,27 @@
     v[0] = ["../weihnacht/weih.mp4"];
     v[1] = ["../weihnacht/kempe.mp4"];
     v[2] = [prev + "1-yzKekzIo7E4ovYNEo2nIiQMOxOQJcW7Lg"];
-    v[3] = [prev + "1D4LhxXVEbmcPrBwzVft2KwveHE3akfr18Q"];
-    v[4] = [prev + "1xOOKQbOMkgGI5r50oB4kMGvGTwSyWRe__g"];
-    v[5] = [prev + "1-mmtlcKj8jUIECYLVW8yzU3npFmfBSADzQ"];
-    v[6] = [prev + "1sunLyrV4YJU8y1qg3Tz1l9pEVP7b7K5AXw"];
+//    v[3] = [prev + "1D4LhxXVEbmcPrBwzVft2KwveHE3akfr18Q"];
+//    v[4] = [prev + "1xOOKQbOMkgGI5r50oB4kMGvGTwSyWRe__g"];
+//    v[5] = [prev + "1-mmtlcKj8jUIECYLVW8yzU3npFmfBSADzQ"];
+//    v[6] = [prev + "1sunLyrV4YJU8y1qg3Tz1l9pEVP7b7K5AXw"];
+
+    v[3] = [prev + "1lmdYNFWnXXa91doyhv2ONXnW2ThRKsbA3A"];
+    v[4] = [prev + "1pcsaKoA0xRGGTj8yD0Pa5-4_c9AqDg7uvw"];
+    v[5] = [prev + "1u2lp6UbZ6VWvTaH8L48SflQQlst0dD98RQ"];
+    v[6] = [prev + "1VeNo_Ti_Kv0ZNLeExsAertvNiOUPNn8BhQ"];
+
+    v[7] = [prev + "1IMcurNlRNdISK-NPIzwrZnxwZkWhKlSDWA"];
+    v[8] = [prev + "1RFr_pDFdKoU7G3BRbKkn8ZnrDOmzPhxw7w"];
+    v[9] = [prev + "1PFEgmDc9hbdiMD8DwGEzW5m3OJdOGGWfKw"];
+    v[10] = [prev + "1Zumn2CO-L7HCFKE4rt3IIMdIX8HLqrccWA"];
+    v[11] = [prev + "1RFr_pDFdKoU7G3BRbKkn8ZnrDOmzPhxw7w"];
+    v[12] = [prev + "1MvyEyjjHCpINLx0ietZblODmQztkUjK6yw"];
+
+    v[13] = [prev + "1tHPZPouxWARas0sBMM8cw6EvCi53ZGgANA"];
+    v[14] = [prev + "1-YDUNoSuCxsbHPOeBpyZnCYg7R7rnmR1wA"];
+    v[15] = [prev + "13VnKwRH22t3F-Gt52khhzB5KdsHTvt1OgQ"];
+    v[16] = [prev + "140Cwbxa-gTab3E9K4yZYPXO3kymfiwoLZQ"];
 
     var myVideo = document.getElementById("video1");
 
@@ -65,7 +100,7 @@
             myVideo.pause();
     }
 
-    function changevid(n) {myVideo.src = v[n];}
+    function changevid(n) {myVideo.src = v[n];document.getElementById("fn").innerHTML = "filename: " + v[n];}
 
     function makeBig(n) {myVideo.width = n;}
     </script>
