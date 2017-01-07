@@ -11,9 +11,9 @@
 
 </head>
 
-<body>
+<body onload="settxt()">
 
-  <header>Video player<br></header>
+  <header>Dancing Rat Pack<br></header>
 
 <div id="hilfscontainer">
 
@@ -21,23 +21,29 @@
 <nav>
 
 <ul>
-  <li><button onclick="changevid(0)">Weihnacht</button></li>
-  <li><button onclick="changevid(1)">Kempe</button></li>
-  <li><button onclick="changevid(2)">gdrive 0</button></li>
-  <li><button onclick="changevid(3)">gdrive 1</button></li>
-  <li><button onclick="changevid(4)">gdrive 2</button></li>
-  <li><button onclick="changevid(5)">gdrive 3</button></li>
-  <li><button onclick="changevid(6)">gdrive 4</button></li>
-  <li><button onclick="changevid(7)">gdrive 5</button></li>
-  <li><button onclick="changevid(8)">gdrive 6</button></li>
-  <li><button onclick="changevid(9)">gdrive 7</button></li>
-  <li><button onclick="changevid(10)">gdrive 8</button></li>
-  <li><button onclick="changevid(11)">gdrive 9</button></li>
-  <li><button onclick="changevid(12)">gdrive 10</button></li>
-  <li><button onclick="changevid(13)">gdrive 11</button></li>
-  <li><button onclick="changevid(14)">gdrive 12</button></li>
-  <li><button onclick="changevid(15)">gdrive 13</button></li>
-  <li><button onclick="changevid(16)">gdrive 14</button></li>
+  <!--<li><button id="b0" onclick="changevid(0)">Weihnacht</button></li>
+  <li><button id="b1" onclick="changevid(1)">Kempe</button></li>
+  <li><button id="b2" onclick="changevid(2)">gdrive 0</button></li>-->
+  <li><button id="b3" onclick="changevid(3)">gdrive 1</button></li>
+  <li><button id="b4" onclick="changevid(4)">gdrive 2</button></li>
+  <li><button id="b5" onclick="changevid(5)">gdrive 3</button></li>
+  <li><button id="b6" onclick="changevid(6)">gdrive 4</button></li>
+  <li><button id="b7" onclick="changevid(7)">gdrive 5</button></li>
+  <li><button id="b8" onclick="changevid(8)">gdrive 6</button></li>
+  <li><button id="b9" onclick="changevid(9)">gdrive 7</button></li>
+  <li><button id="b10" onclick="changevid(10)">gdrive 8</button></li>
+  <!--li><button id="b11" onclick="changevid(11)">gdrive 9</button></li-->
+  <li><button id="b12" onclick="changevid(12)">gdrive 10</button></li>
+  <li><button id="b13" onclick="changevid(13)">gdrive 11</button></li>
+  <li><button id="b14" onclick="changevid(14)">gdrive 12</button></li
+  <li><button id="b15" onclick="changevid(15)">gdrive 13</button></li>
+  <!--li><button id="b16" onclick="changevid(16)">gdrive 14</button></li-->
+  <li><button id="b17" onclick="changevid(17)">gdrive 15</button></li>
+  <li><button id="b18" onclick="changevid(18)">gdrive 16</button></li>
+  <li><button id="b19" onclick="changevid(19)">gdrive 17</button></li>
+  <li><button id="b20" onclick="changevid(20)">gdrive 18</button></li>
+  <li><button id="b21" onclick="changevid(21)">gdrive 19</button></li>
+  <li><button id="b22" onclick="changevid(22)">gdrive 20</button></li>
 </ul>
 </nav>
 </aside>
@@ -45,6 +51,7 @@
 <main>
 <article>
     <p id="fn">filename</p>
+    <p id="na">filename</p>
 
     <ul>
         <li>
@@ -90,6 +97,38 @@
     v[14] = [prev + "1-YDUNoSuCxsbHPOeBpyZnCYg7R7rnmR1wA"];
     v[15] = [prev + "13VnKwRH22t3F-Gt52khhzB5KdsHTvt1OgQ"];
     v[16] = [prev + "140Cwbxa-gTab3E9K4yZYPXO3kymfiwoLZQ"];
+    v[17] = [prev + "1cAutBjDY9OoSbW1xtkcE4lO_0xsyB-wzWA"];
+    v[18] = [prev + "1XkEI-URH4izYCJa15__Z-Py8wzFHUu229A"];
+    v[19] = [prev + "1b3cPv1qeyaaIGOARFxs1ztlp0m1KYz5nRg"];
+    v[20] = [prev + "1cRjBZOqSmRD7Kiz3_udvfGxNhrhTg2u2DQ"];
+    v[21] = [prev + "1WAVM9QJadMaqSAluwdIS3OtSOmr51UfGqg"];
+    v[22] = [prev + "14J3QZDEB2KNd4DFlnLn75Ay64TX_3gEO9g"];
+
+
+    var a = new Array();
+    a[0] = ["m+b"];
+    a[1] = ["r+b"];
+    a[2] = ["m+b 2"];
+    a[3] = ["Hip Hop Shop"];
+    a[4] = ["Chrismukkah"];
+    a[5] = ["Secret Santa"];
+    a[6] = ["Feliz Navidad"];
+    a[7] = ["Office Party"];
+    a[8] = ["Breakin'"];
+    a[9] = ["EDM"];
+    a[10] = ["Charleston"];
+    a[11] = ["Breakin'"];
+    a[12] = ["House Party"];
+    a[13] = ["HipHop"];
+    a[14] = ["Jingle Pop"];
+    a[15] = ["Cats!"];
+    a[16] = ["r+b 2"];
+    a[17] = ["Espanol"];
+    a[18] = ["Classic"];
+    a[19] = ["Honkey Tonk"];
+    a[20] = ["Soul"];
+    a[21] = ["80's"];
+    a[22] = ["Oh Hannukkah"];
 
     var myVideo = document.getElementById("video1");
 
@@ -100,7 +139,23 @@
             myVideo.pause();
     }
 
-    function changevid(n) {myVideo.src = v[n];document.getElementById("fn").innerHTML = "filename: " + v[n];}
+    function changevid(n) {myVideo.src = v[n];
+      document.getElementById("fn").innerHTML = "filename: " + v[n];
+      document.getElementById("na").innerHTML = "filename: " + a[n];
+      
+  }
+
+    function settxt() {
+      for (i = 3; i <= 10; i++) {
+        b = "b" + i;
+        document.getElementById(b).innerHTML = a[i];};
+     for (i = 12; i <= 15; i++) {
+      b = "b" + i;
+      document.getElementById(b).innerHTML = a[i];};
+      for (i = 17; i <= 22; i++) {
+        b = "b" + i;
+        document.getElementById(b).innerHTML = a[i];};
+    }
 
     function makeBig(n) {myVideo.width = n;}
     </script>
@@ -110,7 +165,7 @@
 
 </div>
 
-<footer>mb</footer>
+<footer>mike bike</footer>
 
 
 </body>

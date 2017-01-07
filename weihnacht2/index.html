@@ -8,41 +8,139 @@
 <link rel="stylesheet" media="(min-width: 640px)" href="html5_stylesheet.css">
 <link rel="stylesheet" media="print" href="print.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
-<body>
-  <header>Wir wünschen allen<br>
-  Verwandten und Freunden<br>
-  ein schönes Weihnachtsfest<br>
-  und ein gesundes neues Jahr<br></header>
+<body onload="settxt()">
+
+  <header>Dancing Rat Pack<br></header>
 
 <div id="hilfscontainer">
 
 <aside>
 <nav>
+
 <ul>
 
+  <li><button id="b1" onclick="changevid(1)"></button></li>
+  <li><button id="b2" onclick="changevid(2)"></button></li>
+  <li><button id="b3" onclick="changevid(3)"></button></li>
+  <li><button id="b4" onclick="changevid(4)"></button></li>
+  <li><button id="b5" onclick="changevid(5)"></button></li>
+  <li><button id="b6" onclick="changevid(6)"></button></li>
+  <li><button id="b7" onclick="changevid(7)"></button></li>
+  <li><button id="b8" onclick="changevid(8)"></button></li>
+  <li><button id="b9" onclick="changevid(9)"></button></li>
+  <li><button id="b10" onclick="changevid(10)"></button></li>
+  <li><button id="b11" onclick="changevid(11)"></button></li
+  <li><button id="b12" onclick="changevid(12)"></button></li>
+  <li><button id="b13" onclick="changevid(13)"></button></li>
+  <li><button id="b14" onclick="changevid(14)"></button></li>
+  <li><button id="b15" onclick="changevid(15)"></button></li>
+  <li><button id="b16" onclick="changevid(16)"></button></li>
+  <li><button id="b17" onclick="changevid(17)"></button></li>
+  <li><button id="b18" onclick="changevid(18)"></button></li>
 </ul>
 </nav>
 </aside>
 
 <main>
 <article>
+    <!--p id="fn">filename</p-->
+    <p id="fn"></p>
 
-  <iframe src="
-  https://drive.google.com/file/d/1YukEZ6YKbC2jNgM_TqRjXJYtgJR2n8pxKA/preview"
-  width="640" height="384"></iframe>
+    <ul>
+        <li>
+        <button id="bot" onclick="playPause()">Play/Pause</button>
+        <button id="bot" onclick="makeBig(560)">Normal</button>
+        <button id="bot" onclick="makeBig(420)">klein</button>
+        <!--button id="bot" onclick="makeBig(320)">Small</button-->
+        </li>
+    </ul>
 
-  <video controls="controls">
-  <source src="../weihnacht/weih.mp4" type='video/mp4'/>
-  </video>
+    <br>
+
+    <video id="video1" width="560">
+      <source src="" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <script>
+    var v = new Array();
+    var prev = "https://drive.google.com/uc?export=download&id=";
+
+    v[1] = [prev + "1lmdYNFWnXXa91doyhv2ONXnW2ThRKsbA3A"];
+    v[2] = [prev + "1pcsaKoA0xRGGTj8yD0Pa5-4_c9AqDg7uvw"];
+    v[3] = [prev + "1u2lp6UbZ6VWvTaH8L48SflQQlst0dD98RQ"];
+    v[4] = [prev + "1VeNo_Ti_Kv0ZNLeExsAertvNiOUPNn8BhQ"];
+    v[5] = [prev + "1IMcurNlRNdISK-NPIzwrZnxwZkWhKlSDWA"];
+    v[6] = [prev + "1RFr_pDFdKoU7G3BRbKkn8ZnrDOmzPhxw7w"];
+    v[7] = [prev + "1PFEgmDc9hbdiMD8DwGEzW5m3OJdOGGWfKw"];
+    v[8] = [prev + "1Zumn2CO-L7HCFKE4rt3IIMdIX8HLqrccWA"];
+    v[9] = [prev + "1RFr_pDFdKoU7G3BRbKkn8ZnrDOmzPhxw7w"];
+    v[9] = [prev + "1MvyEyjjHCpINLx0ietZblODmQztkUjK6yw"];
+    v[10] = [prev + "1tHPZPouxWARas0sBMM8cw6EvCi53ZGgANA"];
+    v[11] = [prev + "1-YDUNoSuCxsbHPOeBpyZnCYg7R7rnmR1wA"];
+    v[12] = [prev + "13VnKwRH22t3F-Gt52khhzB5KdsHTvt1OgQ"];
+    v[13] = [prev + "1cAutBjDY9OoSbW1xtkcE4lO_0xsyB-wzWA"];
+    v[14] = [prev + "1XkEI-URH4izYCJa15__Z-Py8wzFHUu229A"];
+    v[15] = [prev + "1b3cPv1qeyaaIGOARFxs1ztlp0m1KYz5nRg"];
+    v[16] = [prev + "1cRjBZOqSmRD7Kiz3_udvfGxNhrhTg2u2DQ"];
+    v[17] = [prev + "1WAVM9QJadMaqSAluwdIS3OtSOmr51UfGqg"];
+    v[18] = [prev + "14J3QZDEB2KNd4DFlnLn75Ay64TX_3gEO9g"];
+
+    var a = new Array();
+    a[1] = ["Hip Hop Shop"];
+    a[2] = ["Chrismukkah"];
+    a[3] = ["Secret Santa"];
+    a[4] = ["Feliz Navidad"];
+    a[5] = ["Office Party"];
+    a[6] = ["Breakin'"];
+    a[7] = ["EDM"];
+    a[8] = ["Charleston"];
+    a[9] = ["House Party"];
+    a[10] = ["HipHop"];
+    a[11] = ["Jingle Pop"];
+    a[12] = ["Cats!"];
+    a[13] = ["Espanol"];
+    a[14] = ["Classic"];
+    a[15] = ["Honkey Tonk"];
+    a[16] = ["Soul"];
+    a[17] = ["80's"];
+    a[18] = ["Oh Hannukkah"];
+
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+
+    function changevid(n) {myVideo.src = v[n];
+      document.getElementById("fn").innerHTML =  a[n];
+      document.getElementById("na").innerHTML = "filename: " + a[n];
+   }
+
+    function settxt() {
+      for (i = 1; i <= 18; i++) {
+        b = "b" + i;
+        document.getElementById(b).innerHTML = a[i];};
+        document.button.style.color = "#000000";
+                document.getElementById("b2").style.backgroundcolor  = "#000000";
+    }
+
+    function makeBig(n) {myVideo.width = n;}
+    </script>
 
 </article>
 </main>
 
 </div>
 
-<footer>*Brigitte und Michael*</footer>
+<footer>mike bike</footer>
+
 
 </body>
 </html>

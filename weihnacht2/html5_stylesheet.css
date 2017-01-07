@@ -29,7 +29,7 @@ button {background-color:#2d8f7b;
 	width:150px;
 	height:20px}
 
-ul li button:visited {color:#ffffff;}
+/*ul li button:visited {color:#000000;}*/
 
 ul li button:hover, ul li .current {color:black;
 	    background-color:yellow;}
