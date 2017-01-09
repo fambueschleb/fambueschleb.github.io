@@ -19,9 +19,8 @@
 
 <aside>
 <nav>
-text</br>
-<ul>
 
+<ul>
   <li id="b0" onclick="changevid(0)"></li>
   <li id="b1" onclick="changevid(1)"></li>
   <li id="b2" onclick="changevid(2)"></li>
@@ -29,28 +28,25 @@ text</br>
   <li id="b4" onclick="changevid(4)"></li>
   <li id="b5" onclick="changevid(5)"></li>
   <li id="b6" onclick="changevid(6)"></li>
-
 </ul>
+
 </nav>
 </aside>
 
 <main>
 <article>
-    <p id="fn">filename</p>
-    <p id="na">filename</p>
+    <p id="fn"></p>
+    <p id="na"></p>
 
     <ul>
-        <li>
         <button id="bot" onclick="playPause()">Play/Pause</button>
-        <button id="bot" onclick="makeBig(560)">Big</button>
-        <button id="bot" onclick="makeBig(420)">Normal</button>
-        <button id="bot" onclick="makeBig(320)">Small</button>
-        </li>
+        <button id="bot" onclick="makeBig(560)">Normal</button>
+        <button id="bot" onclick="makeBig(420)">Klein</button>
     </ul>
 
     <br>
 
-    <video id="video1" width="420">
+    <video id="video1" width="560">
       <source src="" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
@@ -126,8 +122,8 @@ text</br>
     }
 
     function changevid(n) {myVideo.src = v[n];
-      document.getElementById("fn").innerHTML = "filename: " + v[n];
-      document.getElementById("na").innerHTML = "filename: " + a[n];
+      document.getElementById("fn").innerHTML =  v[n];
+      document.getElementById("na").innerHTML =  a[n];
       playPause();
 
   }

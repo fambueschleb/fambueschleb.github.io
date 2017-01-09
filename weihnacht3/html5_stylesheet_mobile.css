@@ -9,7 +9,7 @@ body {background-color:#ffffff;
 
 body a {color:#0066ff;}
 
-header {background-color:#64e379;
+header {background-color:#008200;
 	color: #ffffff;
 	font-size: x-large;
 	font-style:italic;
@@ -29,19 +29,19 @@ header {background-color:#64e379;
 		width:150px;
 		height:20px}
 
-	ul li button:visited {color:#ffffff;}
+	ul  button:visited {color:#ffffff;}
 
-	ul li button:hover, ul li .current {color:black;
+	ul  button:hover, ul  .current {color:black;
 		    background-color:yellow;}
 
-	#fn {background-color:#b5b5b5;
+	#fn, #na {background-color:#b5b5b5;
 		clear:left;
 		color:#ffffff;
 		font-size:xx-small;
 		font-style:italic;
 		font-weight:bolder;
-		padding-bottom:10px;
-		padding-top:10px;
+		padding-bottom:5px;
+		padding-top:5px;
 		text-align:center;
 		width: 100%;}
 
@@ -70,7 +70,7 @@ article {
 	padding-right:1px;
 	padding-top:1px;}
 
-footer {background-color:#64e379;
+footer {background-color:#008200;
 	color:#ffffff;
 	font-size:x-large;
 	font-style:italic;
@@ -86,20 +86,20 @@ ul {margin:0;
     padding:0;
     width:100%;
     list-style-type:none;
-	font-size:medium;
+	  font-size:medium;
 }
 
-ul li a {
+ul li {
     text-decoration:none;
     color:white;
     padding:3px 3px;
-	margin-bottom:5px;
+	  margin-bottom:5px;
     background-color:#48a262;
     display:block;
-	border-radius:10px;
+	  border-radius:10px;
 }
 
-ul li a:visited {color: white;}
+ul li :visited {color: white;}
 
-ul li a:hover, ul li .current {color: black;
+ul li:hover, ul li .current {color: black;
     background-color: yellow;}
