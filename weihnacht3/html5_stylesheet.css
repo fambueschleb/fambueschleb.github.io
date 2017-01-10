@@ -50,10 +50,10 @@ aside {float:left;
 	width:25%;}
 
 nav {margin:10px;
-	padding-bottom:20px;
+	padding-bottom:5px;
 	padding-left:5px;
 	padding-right:5px;
-	padding-top:10px;
+	padding-top:5px;
 	text-align:center;}
 
 main {background-color:#ffffff;
@@ -91,14 +91,14 @@ ul {margin:0;
     padding:0;
     width:100%;
     list-style-type:none;
-	  font-size:large;
+	  font-size:small;
 }
 
 ul li {
 	  text-decoration:none;
     color:#ffffff;
-    padding:10.5px 11px;
-  	margin-bottom:10px;
+    padding:2px 2px;
+  	margin-bottom:5px;
     background-color:#48a262;
     display:block;
 	  border-radius:10px;
