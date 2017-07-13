@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background-color:#ffffff;
+	background-image: url("../hintergrund.jpg");
+	color:#000000;
+	font-family:Verdana, Geneva, sans-serif;
+	margin:0px;}
+
+body a {color:#0066ff;}
+
+header {background-color:#008200;
+	color: #ffffff;
+	font-size: xx-large;
+	font-style:italic;
+	font-weight:bolder;
+	padding: 10px;
+	text-align:center;}
+
+#hilfscontainer {margin:0px auto;
+	 max-width:1024px;}
+
+#bot {width:100px;
+	height:20px}
+
+button {background-color:#2d8f7b;
+	color: #ffffff;
+	border-radius:10px;
+	width:150px;
+	height:20px}
+
+ul button:visited {color:#000000;}
+
+ul button:hover, ul .current {color:black;
+	    background-color:yellow;}
+
+#fn, #na {background-color:#b5b5b5;
+	clear:left;
+	color:#ffffff;
+	font-size:normal;
+	font-style:italic;
+	font-weight:bolder;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-align:center;
+	width: 100%;}
+
+aside {float:left;
+	text-align:center;
+	width:25%;}
+
+nav {margin:10px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+	text-align:center;}
+
+main {background-color:#ffffff;
+	<!--	background-image: url("../hintergrund.jpg");-->
+	color: #000000;
+	float:left;
+	width:75%;}
+
+main h1 {font-size: x-large;
+ 	margin-bottom: 10px;
+	margin-top: 0px;}
+
+article {border: 1px solid grey;
+	border-radius:10px;
+	margin:20px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;}
+
+footer {background-color:#008200;
+	clear:left;
+	color:#ffffff;
+	font-size:xx-large;
+	font-style:italic;
+	font-weight:bolder;
+	padding-bottom:10px;
+	padding-top:10px;
+	text-align:center;
+	width: 100%;}
+
+img {max-width:100%; height:auto; }
+
+ul {margin:0;
+    padding:0;
+    width:100%;
+    list-style-type:none;
+	  font-size:small;
+}
+
+ul li {
+	  text-decoration:none;
+    color:#ffffff;
+    padding:2px 2px;
+  	margin-bottom:5px;
+    background-color:#48a262;
+    display:block;
+	  border-radius:10px;
+}
+
+ul li:visited {color:#ffffff;}
+
+ul li:hover, ul li .current {color:black;
+    background-color:yellow;}
