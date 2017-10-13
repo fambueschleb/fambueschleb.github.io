@@ -2,6 +2,8 @@
 
 /* CSS Document */
 
+p.k, td.k, span.k	{ font-family:Arial; font-size:10pt; color:#cc0033; }
+
 body {background-color:#ffffff;
 	color:#000000;
 	font-family:Verdana, Geneva, sans-serif;
