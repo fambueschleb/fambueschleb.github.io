@@ -8,23 +8,77 @@
 <link rel="stylesheet" media="(min-width: 640px)" href="html5_stylesheet.css">
 <link rel="stylesheet" media="print" href="print.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
-<body>
-<header>Wir wünschen allen
-Verwandten und Freunden<br>
-ein schönes Weihnachtsfest und <br>
-ein gesundes neues Jahr 2018<br></header>
+<body onload="settxt()">
+
+  <header>Wir wünschen allen
+  Verwandten und Freunden<br>
+  ein schönes Weihnachtsfest und <br>
+  ein gesundes neues Jahr 2018<br><br></header>
 
 <div id="hilfscontainer">
 
+<!--aside>
+<nav>
+
+
+</nav>
+</aside-->
+
 <main>
 <article>
-  <video controls="controls">
-  <source src="https://drive.google.com/uc?export=download&id=17sIvrbTtOZTHGVwbrDKB33fe6jqFk9f5" type='video/mp4'/>
-  <!--source src="https://drive.google.com/uc?export=download&id=1WGNdcuHflerZGlnCtWqNcb935but_Qcd" type='video/mp4'/-->
-  <!--source src="ElfYourself17-a.mp4" type='video/mp4'/-->
-  </video>
+
+    <!--p id="fn">Video wählen</p-->
+    <ul>
+    <li><button id="b1" onclick="changevid(1)"></button>
+    <button id="b2" onclick="changevid(2)"></button>
+    <button id="bot" onclick="playPause()">Play/Pause</button></li>
+    </ul>
+
+    <video autoplay controls id="video1" width="720">
+      <source src="" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <script>
+    var v = new Array();
+    var prev = "https://drive.google.com/uc?export=download&id=";
+
+    v[1] = [prev + "17sIvrbTtOZTHGVwbrDKB33fe6jqFk9f5"];
+    v[2] = [prev + "1WGNdcuHflerZGlnCtWqNcb935but_Qcd"];
+
+    var a = new Array();
+    a[1] = ["Video 1"];
+    a[2] = ["Video 2"];
+
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+
+    function changevid(n) {myVideo.src = v[n];
+
+      document.getElementById("fn").innerHTML =  a[n];
+      //document.getElementById("na").innerHTML = "filename: " + a[n];
+      playPause();
+   }
+
+    function settxt() {
+      for (i = 1; i <= 2; i++) {
+        b = "b" + i;
+        document.getElementById(b).innerHTML = a[i];};
+        document.button.style.color = "#000000";
+                document.getElementById("b2").style.backgroundcolor  = "#000000";
+    }
+
+    function makeBig(n) {myVideo.width = n;}
+    </script>
 
 </article>
 </main>
@@ -32,5 +86,7 @@ ein gesundes neues Jahr 2018<br></header>
 </div>
 
 <footer>*Brigitte und Michael*</footer>
+
+
 </body>
 </html>
