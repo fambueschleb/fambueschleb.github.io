@@ -21,7 +21,8 @@ header {background-color:#64e379;
 aside {text-align:center;
 	width:100%;}
 
-nav {margin:50px;
+nav {height: 40px;
+	margin:20px;
 	padding-bottom:1px;
 	padding-left:5px;
 	padding-right:5px;
