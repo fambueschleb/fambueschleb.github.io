@@ -13,6 +13,13 @@
 <link rel="stylesheet" media="(min-width: 640px)" href="html5_stylesheet.css">
 <link rel="stylesheet" media="print" href="print.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function func1() {
+  document.getElementById("demo").innerHTML = '<iframe height="1000" src="http://www.bueschleb.privat.t-online.de/radlergruppe/IMG_9583c.png" width="900"></iframe>';
+}
+window.onload=func1;
+</script>
+
 </head>
 
 <body>
@@ -22,6 +29,7 @@
 
 <aside>
 <nav>
+
 <ul>
   <li><a onclick="menpkt(1)">Gepäcktouren Übersicht</a></li>
   <li><a onclick="menpkt(2)">2002 Werra, Rennsteig</a></li>
@@ -102,6 +110,8 @@
    case 17:
      document.getElementById("demo").innerHTML = '<iframe height="1000" src="http://fambueschleb.blogspot.com/2019/07/cappuccino-geiseltal-2019.html" width="900"></iframe>';
    break;
+   default:
+     document.getElementById("demo").innerHTML = '<iframe height="1000" src="http://bueschleb.privat.t-online.de/normal53.htm" width="900"></iframe>';
  }
 }
   </script>
