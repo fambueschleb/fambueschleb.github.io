@@ -76,4 +76,4 @@ ul li a {float:left;
 ul li a:visited {color: white;}
 
 ul li a:hover, ul li .current {color: black;
-    background-color: yellow;}
+    background-color: yellow;; cursor: pointer;}

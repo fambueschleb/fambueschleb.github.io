@@ -77,5 +77,5 @@ ul li a {text-decoration:none;
 
 ul li a:visited {color:#ffffff;}
 
-ul li a:hover, ul li .current {color:black;
-    background-color:yellow;}
+ul li a:hover , ul li .current {color:black;
+    background-color:yellow;cursor: pointer;}

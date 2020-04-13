@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="content-type" content="text/html; charset=utf-8" /> -->
+<title>Gepäcktouren</title>
+<meta name="description" content="Gepäcktouren">
+<meta name="keywords" content="Büschleb">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Hans Mustermann, Musterstraße 1, 00000 Musterstadt">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" media="(max-width: 640px)" href="html5_stylesheet_mobile.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="html5_stylesheet.css">
+<link rel="stylesheet" media="print" href="print.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function func1() {
+  document.getElementById("demo").innerHTML = '<figure><img src="bild/deckblatt.jpg"  alt=""><figcaption>Deckblatt</figcaption></figure>';
+}
+window.onload=func1;
+</script>
+
+</head>
+
+<body>
+<header>bike challenge</header>
+
+<div id="hilfscontainer">
+
+<aside>
+<nav>
+
+<ul>
+  <li><a onclick="menpkt(1)">2005</a></li>
+  <li><a onclick="menpkt(2)">2006</a></li>
+  <li><a onclick="menpkt(3)">2007</a></li>
+  <li><a onclick="menpkt(4)">2008</a></li>
+  <li><a onclick="menpkt(5)">2009</a></li>
+  <li><a onclick="menpkt(6)">2010</a></li>
+  <li><a onclick="menpkt(7)">2011</a></li>
+  <li><a onclick="menpkt(8)">2012</a></li>
+  <li><a onclick="menpkt(9)">2013</a></li>
+  <li><a onclick="menpkt(10)">2014</a></li>
+  <li><a onclick="menpkt(11)">2015</a></li>
+  <li><a onclick="menpkt(12)">2016</a></li>
+  <li><a onclick="menpkt(13)">2017</a></li>
+  <li><a onclick="menpkt(14)">2018</a></li>
+  <li><a onclick="menpkt(15)">2019</a></li>
+  <li><a onclick="menpkt(16)">Sammelbild</a></li>
+  <li><a onclick="menpkt(17)">Übersicht</a></li>
+</ul>
+</nav>
+</aside>
+
+<main>
+<article>
+<a NAME="back"></a>
+
+  <script>
+  var txt = [
+  "Kötsch",
+  "Volvo",
+  "BMW"
+  ];
+  var bild =[
+    "bild/2005.jpg",
+    "bild/2006.jpg"
+  ]
+  function menpkt(i) {
+  switch (i) {
+   case 1:
+     document.getElementById("demo").innerHTML = txt[i-1] +' * '+ bild[i-1] + '<figure><img src="' + bild[i-1] + '"  alt=""><figcaption>' + txt[i-1] + '</figcaption></figure>';
+   break;
+   case 2:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2006.jpg"  alt=""><figcaption>Dolmar</figcaption></figure>';
+   break;
+   case 3:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2007.jpg"  alt=""><figcaption>Unstrut</figcaption></figure>';
+   break;
+   case 4:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2008.jpg"  alt=""><figcaption>Amtsschreibermühle-Bad Blankenburg</figcaption></figure>';
+   break;
+   case 5:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2009.jpg"  alt=""><figcaption>Werra</figcaption></figure>';
+   break;
+   case 6:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2010.jpg"  alt=""><figcaption>Bergtour Kali und Salz</figcaption></figure>';
+   break;
+   case 7:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2011.jpg"  alt=""><figcaption>Neuseenland-Tour 2011</figcaption></figure>';
+   break;
+   case 8:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2012.jpg"  alt=""><figcaption>Rennsteig-Tour</figcaption></figure>';
+   break;
+   case 9:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2013.jpg"  alt=""><figcaption>Eichsfeld/Hainich-Tour</figcaption></figure>';
+   break;
+   case 10:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2014.jpg"  alt=""><figcaption>Bad Frankenhausen</figcaption></figure>';
+   break;
+   case 11:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2015.jpg"  alt=""><figcaption>Werra-Bootstour</figcaption></figure>';
+   break;
+   case 12:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2016.jpg"  alt=""><figcaption>Brockentour</figcaption></figure>';
+   break;
+   case 13:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2017.jpg"  alt=""><figcaption>Pension 1813 Tour</figcaption></figure>';
+   break;
+   case 14:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2018.jpg"  alt=""><figcaption>Schneekopf Gehlberger Hütte</figcaption></figure>';
+   break;
+   case 15:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/2019.jpg"  alt=""><figcaption>Werra, Fulda, Weser Tour</figcaption></figure>';
+   break;
+   case 16:
+     document.getElementById("demo").innerHTML = '<figure><img src="bild/sammel19.jpg"  alt=""><figcaption>Sammelbild</figcaption></figure>';
+   break;
+   case 17:
+     document.getElementById("demo").innerHTML = '<iframe width="640" height="480"src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRa4ADjJ2QcwuYd9r7TInz37F2l2RGmT0fU9flxexMZ2rxFij7Td_r5L8wZwfwIz3i1F8NpiNfH61WT/pubhtml?gid=1370917239&amp;single=true&amp;widget=true&amp;headers=false"></iframe>';
+   break;
+   default:
+     document.getElementById("demo").innerHTML = '<iframe height="1000" src="http://bueschleb.privat.t-online.de/normal53.htm" width="900"></iframe>';
+ }
+}
+  </script>
+
+  <p id="demo"></p>
+
+</article>
+</main>
+
+</div>
+
+<footer>Gepäcktouren</footer>
+
+</body>
+</html>
