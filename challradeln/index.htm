@@ -46,8 +46,9 @@ window.onload=func1;
   <li><a onclick="menpkt(13)">2017</a></li>
   <li><a onclick="menpkt(14)">2018</a></li>
   <li><a onclick="menpkt(15)">2019</a></li>
-  <li><a onclick="menpkt(16)">Sammelbild</a></li>
-  <li><a onclick="menpkt(17)">Übersicht</a></li>
+  <li><a onclick="menpkt(16)">2020</a></li>
+  <li><a onclick="menpkt(17)">Sammelbild</a></li>
+  <li><a onclick="menpkt(18)">Übersicht</a></li>
 </ul>
 </nav>
 </aside>
@@ -58,19 +59,24 @@ window.onload=func1;
 
   <script>
   var txt = [
-    "I.   2005 Kötsch","II.  2006 Dolmar","III. 2007 Unstrut","IV.  2008 Amtsschreibermühle-Bad Blankenburg","V.   2009 Werra","VI.  2010 Bergtour Kali und Salz",
-    "VII.  2011 Neuseenland-Tour","VIII. 2012 Rennsteig-Tour","IX.  2013 Eichsfeld/Hainich-Tour","X.   2014 Bad Frankenhausen","XI.  2015 Werra-Bootstour","XII.  2016 Brockentour",
-    "XIII. 2017 Pension 1813 Tour","XIV.  2018 Schneekopf Gehlberger Hütte","XV.  2019 Werra, Fulda, Weser Tour","Sammelbild"
+    "I.   2005 Kötsch","II.  2006 Dolmar","III. 2007 Unstrut","IV.  2008 Amtsschreibermühle-Bad Blankenburg",
+    "V.   2009 Werra","VI.  2010 Bergtour Kali und Salz","VII.  2011 Neuseenland-Tour","VIII. 2012 Rennsteig-Tour",
+    "IX.  2013 Eichsfeld/Hainich-Tour","X.   2014 Bad Frankenhausen","XI.  2015 Werra-Bootstour","XII.  2016 Brockentour",
+    "XIII. 2017 Pension 1813 Tour","XIV.  2018 Schneekopf Gehlberger Hütte","XV.  2019 Werra, Fulda, Weser Tour",
+    "XVI.  2020 obere Saale Tour",
+    "Sammelbild"
   ];
   var bild =[
-    "bild/2005.jpg","bild/2006.jpg","bild/2007.jpg","bild/2008.jpg","bild/2009.jpg","bild/2010.jpg",
-    "bild/2011.jpg","bild/2012.jpg","bild/2013.jpg","bild/2014.jpg","bild/2015.jpg","bild/2016.jpg",
-    "bild/2017.jpg","bild/2018.jpg","bild/2019.jpg","bild/sammel19.jpg"
+    "bild/2005.jpg","bild/2006.jpg","bild/2007.jpg","bild/2008.jpg",
+    "bild/2009.jpg","bild/2010.jpg","bild/2011.jpg","bild/2012.jpg",
+    "bild/2013.jpg","bild/2014.jpg","bild/2015.jpg","bild/2016.jpg",
+    "bild/2017.jpg","bild/2018.jpg","bild/2019.jpg","bild/2020.jpg",
+    "bild/sammel20.jpg"
   ]
   function menpkt(i) {
   switch (i) {
-   case 17:
-     document.getElementById("demo").innerHTML = '<iframe width="640" height="480"src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRa4ADjJ2QcwuYd9r7TInz37F2l2RGmT0fU9flxexMZ2rxFij7Td_r5L8wZwfwIz3i1F8NpiNfH61WT/pubhtml?gid=1370917239&amp;single=true&amp;widget=true&amp;headers=false"></iframe>';
+   case 18:
+     document.getElementById("demo").innerHTML = '<iframe width="640" height="520"src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRa4ADjJ2QcwuYd9r7TInz37F2l2RGmT0fU9flxexMZ2rxFij7Td_r5L8wZwfwIz3i1F8NpiNfH61WT/pubhtml?gid=1370917239&amp;single=true&amp;widget=true&amp;headers=false"></iframe>';
    break;
    default:
     document.getElementById("demo").innerHTML = /*txt[i-1] +' * '+ bild[i-1] + */'<figure><img src="' + bild[i-1] + '"  alt=""><figcaption>' + txt[i-1] + '</figcaption></figure>';
