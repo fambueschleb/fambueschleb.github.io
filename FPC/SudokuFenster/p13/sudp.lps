@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="10">
+      <Unit0>
+        <Filename Value="sudp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="1"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="p8\sudu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Sudoku"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="3" Y="27"/>
+        <UsageCount Value="200"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="text.txt"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <CursorPos X="37" Y="2"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="sudu.pas"/>
+        <ComponentName Value="Sudoku"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="8"/>
+        <CursorPos X="5" Y="23"/>
+        <FoldState Value=" T3m30;114 pjTnC0U211 TMq701*"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <IsVisibleTab Value="True"/>
+          <WindowIndex Value="1"/>
+          <TopLine Value="105"/>
+          <CursorPos X="47" Y="127"/>
+        </ExtraEditor1>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\p7\master1b.pas"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="181"/>
+        <CursorPos Y="209"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="32"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="sudu.lfm"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="14" Y="2"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <EditorIndex Value="1"/>
+          <WindowIndex Value="1"/>
+          <TopLine Value="92"/>
+          <CursorPos X="14" Y="2"/>
+        </ExtraEditor1>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\kempe-tutor\15-project\sudf.pas"/>
+        <ComponentName Value="Form11"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="171"/>
+        <CursorPos X="7" Y="252"/>
+        <IsLocked Value="True"/>
+        <ExtraEditorCount Value="2"/>
+        <ExtraEditor1>
+          <EditorIndex Value="-1"/>
+          <TopLine Value="181"/>
+          <CursorPos X="35" Y="508"/>
+          <IsLocked Value="True"/>
+        </ExtraEditor1>
+        <ExtraEditor2>
+          <EditorIndex Value="-1"/>
+          <WindowIndex Value="-1"/>
+          <TopLine Value="-1"/>
+          <CursorPos X="-1" Y="-1"/>
+        </ExtraEditor2>
+        <UsageCount Value="98"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3175"/>
+        <CursorPos Y="3197"/>
+        <UsageCount Value="97"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\kempe-tutor\15-project\sudform.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1009"/>
+        <CursorPos X="59" Y="1000"/>
+        <IsLocked Value="True"/>
+        <UsageCount Value="101"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="3723"/>
+        <CursorPos Y="3744"/>
+        <UsageCount Value="9"/>
+      </Unit9>
+    </Units>
+    <JumpHistory Count="29" HistoryIndex="28">
+      <Position1>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="332" Column="38" TopLine="297"/>
+      </Position1>
+      <Position2>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="338" Column="40" TopLine="303"/>
+      </Position2>
+      <Position3>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="615" Column="56" TopLine="126"/>
+      </Position3>
+      <Position4>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="616" Column="56" TopLine="127"/>
+      </Position4>
+      <Position5>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="615" Column="56" TopLine="126"/>
+      </Position5>
+      <Position6>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="622" Column="56" TopLine="129"/>
+      </Position6>
+      <Position7>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="274" Column="23" TopLine="133"/>
+      </Position7>
+      <Position8>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="542" Column="12" TopLine="394"/>
+      </Position8>
+      <Position9>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="512" Column="5" TopLine="381"/>
+      </Position9>
+      <Position10>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="114" Column="14" TopLine="94"/>
+      </Position10>
+      <Position11>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="521" TopLine="139"/>
+      </Position11>
+      <Position12>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="23" Column="10" TopLine="10"/>
+      </Position12>
+      <Position13>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="36" Column="20" TopLine="10"/>
+      </Position13>
+      <Position14>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="37" Column="20" TopLine="10"/>
+      </Position14>
+      <Position15>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="38" Column="20" TopLine="10"/>
+      </Position15>
+      <Position16>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="39" Column="20" TopLine="10"/>
+      </Position16>
+      <Position17>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="150" Column="86" TopLine="114"/>
+      </Position17>
+      <Position18>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="152" Column="39" TopLine="116"/>
+      </Position18>
+      <Position19>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="156" Column="72" TopLine="120"/>
+      </Position19>
+      <Position20>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="159" Column="39" TopLine="123"/>
+      </Position20>
+      <Position21>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="163" Column="66" TopLine="127"/>
+      </Position21>
+      <Position22>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="168" Column="8" TopLine="132"/>
+      </Position22>
+      <Position23>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="180" Column="41" TopLine="144"/>
+      </Position23>
+      <Position24>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="187" Column="35" TopLine="151"/>
+      </Position24>
+      <Position25>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="200" Column="8" TopLine="164"/>
+      </Position25>
+      <Position26>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="290" Column="75" TopLine="187"/>
+      </Position26>
+      <Position27>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="318" Column="36" TopLine="215"/>
+      </Position27>
+      <Position28>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="324" Column="39" TopLine="285"/>
+      </Position28>
+      <Position29>
+        <Filename Value="sudu.pas"/>
+        <Caret Line="351" Column="38" TopLine="316"/>
+      </Position29>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

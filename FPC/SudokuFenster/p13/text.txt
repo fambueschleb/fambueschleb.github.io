@@ -1,0 +1,2 @@
+H:\FPC\MasterMindProjekt\p9\sudu.pas
+H:\FPC\MasterMindProjekt\p9\sudu.lfm

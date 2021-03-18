@@ -1,0 +1,139 @@
+object Sudoku: TSudoku
+  Left = -1533
+  Height = 937
+  Top = 37
+  Width = 759
+  BorderWidth = 3
+  Caption = 'SudokuF'
+  ClientHeight = 937
+  ClientWidth = 759
+  Color = clNone
+  Font.Color = clMenuText
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Memo1: TMemo
+    Left = 16
+    Height = 181
+    Top = 749
+    Width = 481
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 0
+  end
+  object Button3: TButton
+    Left = 592
+    Height = 25
+    Top = 26
+    Width = 66
+    Caption = 'Halt'
+    OnClick = Button3Click
+    TabOrder = 1
+  end
+  object Button7: TButton
+    Left = 504
+    Height = 23
+    Top = 27
+    Width = 75
+    Caption = 'ZifferAlle'
+    OnClick = Button7Click
+    TabOrder = 2
+  end
+  object Panel1: TPanel
+    Left = 608
+    Height = 50
+    Top = 840
+    Width = 54
+    Caption = 'Panel1'
+    ClientHeight = 50
+    ClientWidth = 54
+    Color = clWindow
+    Font.Color = clCaptionText
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Panel1Click
+    object Edit2: TEdit
+      Tag = 77
+      Left = 536
+      Height = 23
+      Top = 688
+      Width = 30
+      NumbersOnly = True
+      OnExit = Edit2Exit
+      OnKeyDown = Edit2KeyDown
+      OnKeyPress = Edit2KeyPress
+      OnUTF8KeyPress = Edit2UTF8KeyPress
+      ReadOnly = True
+      TabStop = False
+      TabOrder = 0
+      Text = 'wawa'
+    end
+  end
+  object Shape1: TShape
+    Left = 520
+    Height = 45
+    Top = 832
+    Width = 65
+    Brush.Color = clMoneyGreen
+  end
+  object Button9: TButton
+    Left = 15
+    Height = 24
+    Top = 60
+    Width = 76
+    Caption = 'Zufall setzen'
+    OnClick = Button9Click
+    TabOrder = 4
+  end
+  object Button10: TButton
+    Left = 104
+    Height = 24
+    Top = 60
+    Width = 82
+    Caption = 'Ausgabe Zufall'
+    OnClick = Button10Click
+    TabOrder = 5
+  end
+  object Edit1: TEdit
+    Left = 594
+    Height = 28
+    Top = 784
+    Width = 80
+    BorderSpacing.Top = 20
+    BorderSpacing.Bottom = 20
+    Font.Color = clMenuText
+    Font.Height = 20
+    OnEditingDone = Edit1EditingDone
+    ParentFont = False
+    TabOrder = 6
+    Text = 'Edit1'
+  end
+  object Button5: TButton
+    Left = 286
+    Height = 24
+    Top = 62
+    Width = 71
+    Caption = 'EditEnd'
+    OnClick = Button5Click
+    TabOrder = 7
+  end
+  object Button11: TButton
+    Left = 375
+    Height = 21
+    Top = 63
+    Width = 69
+    Caption = 'ShowRl'
+    OnClick = Button11Click
+    TabOrder = 8
+  end
+  object Button1: TButton
+    Left = 594
+    Height = 22
+    Top = 58
+    Width = 65
+    Caption = 'Reset'
+    OnClick = Button1Click
+    TabOrder = 9
+  end
+end
