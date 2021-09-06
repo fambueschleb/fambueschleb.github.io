@@ -16,14 +16,11 @@
 <script type="text/javascript">
 
 sourceImage = new Image ();
-let result;
-result = 1;
 
 function changeImage(target,image) {
   sourceImage.src = image;
-  if (result = 1) {document.getElementById(target).src = "putin.jpg"; result = 0;}
-  else {document.getElementById(target).src = "merkel-pult.jpg"; result = 1;}
-  return result;}
+  document.getElementById(target).src = sourceImage.src;
+  }
 
 </script>
 
@@ -53,7 +50,7 @@ function changeImage(target,image) {
 
 <main>
 <article>
-<h1>Keine Angst vor Merkel 3</h1>
+<h1>Keine Angst vor Merkel</h1>
 
 <br />
 <!-- <img  src="merkel-pult1.jpg" /> -->
@@ -61,7 +58,9 @@ function changeImage(target,image) {
 <map name="map">
 
 <area shape="poly" coords="0,0,559,0,559,664,0,664,0,0"
-alt="1"  onclick = "changeImage('person','merkel.jpg')";
+alt="1" href="index.html"
+OnMouseover = "changeImage('person','merkel.jpg')"
+OnMouseout = "changeImage('person','merkel-pult.jpg')"
 />
 
 </map>
