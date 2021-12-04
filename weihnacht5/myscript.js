@@ -46,7 +46,13 @@ p[15] = [prev + "1mMtcv0tkHTUWawxSR4IDQNEjbfhPqPs3"];
 p[16] = [prev + "1dsTBr0uj-22-mewqrCOYNFahacrtoKlo"];
 p[17] = [prev + "1B6CckKOtU5kD-7RoNxC50tyMsA9cZ1Pg"];
 p[18] = [prev + "1nMI5x4CZIGOJE1Sf5zy-_s_yurvsFDKc"];
-
+p[19] = [prev + ""];
+p[20] = [prev + ""];
+p[21] = [prev + ""];
+p[22] = [prev + ""];
+p[23] = [prev + ""];
+p[24] = [prev + ""];
+p[25] = [prev + ""];
 
 var a = new Array();
 a[1] = ["1 Hip Hop Shop"];
@@ -54,7 +60,7 @@ a[2] = ["2 Chrismukkah"];
 a[3] = ["3 Secret Santa"];
 a[4] = ["4 Feliz Navidad"];
 a[5] = ["5 Office Party"];
-a[6] = ["6Breakin"];
+a[6] = ["6 Breakin"];
 a[7] = ["7 EDM"];
 a[8] = ["8 Charleston"];
 a[9] = ["9 House Party"];
@@ -86,25 +92,28 @@ function playPause() {
 }
 
 function changevid(n) {
-  myVideo.src = v[n];
+let heute =  new Date ();
+let maxtag = heute.getDate();
+if (n <= maxtag)
+  {myVideo.src = v[n];
   mypic.src = p[n];
   document.getElementById("fn").innerHTML =  v[n];
   document.getElementById("na").innerHTML =  a[n];
   playPause();
+} else {
+   myVideo.src = "";
+   mypic.src = p[18]; //Gesclossene Tür
 }
-
-function changepic(n) {
-  mypic.src = v[n];
-  myVideo.src = "";
-  document.getElementById("fn").innerHTML =  v[n];
-  document.getElementById("na").innerHTML =  a[n];
-//  playPause();
 }
 
 function settxt() {
   for (i = 1; i <= 24; i++) {
     b = "b" + i;
-    document.getElementById(b).innerHTML = a[i];};
+    document.getElementById(b).innerHTML = a[i];}
+    ;
+    let heute =  new Date ();
+    document.getElementById("textbox").innerHTML = "Adventskalender 2021  Türchen: " + heute.getDate();
+
 }
 
 function makeBig(n) {myVideo.width = n;}
