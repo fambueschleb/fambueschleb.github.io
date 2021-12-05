@@ -34,7 +34,7 @@ ul button:visited {color:#000000;}
 ul button:hover, ul .current {color:black;
 	    background-color:yellow;}
 
-#fn, #na {background-color:#b5b5b5;
+#fn {background-color:#b5b5b5;
 	clear:left;
 	color:#ffffff;
 	font-size:normal;

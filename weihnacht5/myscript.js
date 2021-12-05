@@ -123,17 +123,16 @@ function playPause() {
 
 function changevid(n) {
 let heute =  new Date ();
-//let maxtag = heute.getDate();
-let maxtag = 24;
+let maxtag = heute.getDate();
+//let maxtag = 24;
 if (n <= maxtag)
   {myVideo.src = v[n];
   mypic.src = p[n];
-  document.getElementById("fn").innerHTML =  v[n];
-  document.getElementById("na").innerHTML =  a[n];
+  document.getElementById("fn").innerHTML = "Tag: " + k[n];
   playPause();
 } else {
    myVideo.src = "";
-   mypic.src = p[18]; //Gesclossene Tür
+   mypic.src = p[25]; //Gesclossene Tür
 }
 }
 
@@ -146,8 +145,8 @@ function settxt() {
     document.getElementById("textbox").innerHTML = "Adventskalender 2021  Türchen: " + heute.getDate();
     {myVideo.src = "";
     mypic.src = p[25];
-    document.getElementById("fn").innerHTML =  v[n];
-    document.getElementById("na").innerHTML =  a[n];
+    //document.getElementById("fn").innerHTML =  v[n];
+    //document.getElementById("na").innerHTML =  a[n];
     playPause();
   }
 }
