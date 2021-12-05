@@ -25,7 +25,7 @@ v[20] = [prev + "1GBd3SF1VNO8fsmaiOxUAlPJaW9lsySGQ"];
 v[21] = [prev + "1aQEdDzS_VQgv7c30F4y8csUWbh2Rhk9K"];
 v[22] = [prev + "1J98u3Waig-rFGRd8wrd8hZch_NBh_9lr"];
 v[23] = [prev + "1W8zOD1BuXU_14NHTiMPbtg8cAv2ejrzw"];
-v[24] = [""];
+v[24] = [prev + "17sIvrbTtOZTHGVwbrDKB33fe6jqFk9f5"];
 
 var p = new Array();
 p[1] = [prev + "1C_MqfsaDaKAjK7CzU_KXdKzMd0PoWdLs"];
@@ -42,17 +42,22 @@ p[11] = [prev + "1_L2a0G-TUvLfkHid8QDqWdH2O0G-nEWo"];
 p[12] = [prev + "1Xgl6d1PaEStSMNUSMVNPvgH2EnVdmQm3"];
 p[13] = [prev + "1VWujhnXDckNWxpWWoRVW7FG21Qza7yLg"];
 p[14] = [prev + "193u4Aa9OMEahy64zlpy0gQW2WkKFMcob"];
-p[15] = [prev + "1mMtcv0tkHTUWawxSR4IDQNEjbfhPqPs3"];
+//p[15] = [prev + "1mMtcv0tkHTUWawxSR4IDQNEjbfhPqPs3"];
 p[16] = [prev + "1dsTBr0uj-22-mewqrCOYNFahacrtoKlo"];
 p[17] = [prev + "1B6CckKOtU5kD-7RoNxC50tyMsA9cZ1Pg"];
 p[18] = [prev + "1nMI5x4CZIGOJE1Sf5zy-_s_yurvsFDKc"];
-p[19] = [prev + ""];
-p[20] = [prev + ""];
-p[21] = [prev + ""];
-p[22] = [prev + ""];
-p[23] = [prev + ""];
-p[24] = [prev + ""];
-p[25] = [prev + ""];
+p[19] = [prev + "1sSlf9jEyQVaEUKZ1RI47vqc0R_CaQqwQ"];
+p[20] = [prev + "13XyaXpAZBOfD31woE3Qepm3N8stA94jb"];
+p[21] = [prev + "1FR5PF1aGw0oqfsipmJjXeg_hdvWC1vH9"];
+p[22] = [prev + "17iqi4FPkDAprBCocATwaV08xFqxivfj_"];
+p[23] = [prev + "1HYh98sIWaClZO9AeQUl9xv20vi6jzPbo"];
+p[24] = [prev + "1Dj-Wv4BTzPyyWDI7q0EKlMIchwBMV3EJ"];
+p[15] = [prev + "1j-awSNBNiMC1uqjEuUN-FQF12ON_8W7m"];
+p[25] = [prev + "159bcsDYjhEuzQ9km65VS4WKdnIeJh2L-"];
+p[27] = [prev + "1xwz2-Fw4Jkj5k4yzaxJEZdfv6kRjDMgG"];
+p[28] = [prev + "1o64x03aOoHG2KFdfwoSRlgH33lDJNm9-"];
+p[29] = [prev + "1SK6mMIWjDndA0jSR0dU-IxCLNhbTNq_F"];
+p[30] = [prev + "1BZafwT7qEOTl0BWeg3wnVnKIDPLTtrav"];
 
 var a = new Array();
 a[1] = ["1 Hip Hop Shop"];
@@ -80,6 +85,31 @@ a[22] = ["22 Michel 21"];
 a[23] = ["23 Charlie 23"];
 a[24] = ["24 pic Benna 24"];
 
+var k = new Array();
+k[1] = ["1"];
+k[2] = ["2"];
+k[3] = ["3"];
+k[4] = ["4"];
+k[5] = ["5"];
+k[6] = ["6"];
+k[7] = ["7"];
+k[8] = ["8"];
+k[9] = ["9"];
+k[10] = ["10"];
+k[11] = ["11"];
+k[12] = ["12"];
+k[13] = ["13"];
+k[14] = ["14"];
+k[15] = ["15"];
+k[16] = ["16"];
+k[17] = ["17"];
+k[18] = ["18"];
+k[19] = ["19"];
+k[20] = ["20"];
+k[21] = ["21"];
+k[22] = ["22"];
+k[23] = ["23"];
+k[24] = ["24"];
 
 var myVideo = document.getElementById("video1");
 var mypic = document.getElementById("pic1");
@@ -93,7 +123,8 @@ function playPause() {
 
 function changevid(n) {
 let heute =  new Date ();
-let maxtag = heute.getDate();
+//let maxtag = heute.getDate();
+let maxtag = 24;
 if (n <= maxtag)
   {myVideo.src = v[n];
   mypic.src = p[n];
@@ -109,11 +140,16 @@ if (n <= maxtag)
 function settxt() {
   for (i = 1; i <= 24; i++) {
     b = "b" + i;
-    document.getElementById(b).innerHTML = a[i];}
+    document.getElementById(b).innerHTML = k[i];}
     ;
     let heute =  new Date ();
     document.getElementById("textbox").innerHTML = "Adventskalender 2021  Türchen: " + heute.getDate();
-
+    {myVideo.src = "";
+    mypic.src = p[25];
+    document.getElementById("fn").innerHTML =  v[n];
+    document.getElementById("na").innerHTML =  a[n];
+    playPause();
+  }
 }
 
 function makeBig(n) {myVideo.width = n;}
