@@ -114,21 +114,15 @@ k[24] = ["24"];
 var myVideo = document.getElementById("video1");
 var mypic = document.getElementById("pic1");
 
-function playPause() {
-    if (myVideo.paused)
-        myVideo.play();
-    else
-        myVideo.pause();
-}
-
 function changevid(n) {
 let heute =  new Date ();
 let maxtag = heute.getDate();
 //let maxtag = 24;
+
+document.getElementById("fn").innerHTML = "Türchen: " + k[n];
 if (n <= maxtag)
   {myVideo.src = v[n];
   mypic.src = p[n];
-  document.getElementById("fn").innerHTML = "Tag: " + k[n];
   playPause();
 } else {
    myVideo.src = "";
@@ -141,14 +135,22 @@ function settxt() {
     b = "b" + i;
     document.getElementById(b).innerHTML = k[i];}
     ;
-    let heute =  new Date ();
+    let heute  = new Date ();
     document.getElementById("textbox").innerHTML = "Adventskalender 2021  Türchen: " + heute.getDate();
-    {myVideo.src = "";
-    mypic.src = p[25];
-    //document.getElementById("fn").innerHTML =  v[n];
-    //document.getElementById("na").innerHTML =  a[n];
-    playPause();
-  }
+    document.getElementById("fn").innerHTML = "Türchen: " + k[heute.getDate()];
+
+    mypic.src = p[heute.getDate()];
+    myVideo.src = v[heute.getDate()];
+  //    myVideo.preload = "auto";
+
+  //     myVideo.play();
+  //     myVideo.autoplay = true;
+
+  //  mypic.src = p[heute.getDate()];
+
+  //    changevid(heute.getDate());
+  //    if (myVideo.paused)
+  //        myVideo.play();
 }
 
 function makeBig(n) {myVideo.width = n;}
