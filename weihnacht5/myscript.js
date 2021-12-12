@@ -42,7 +42,7 @@ p[11] = [prev + "1_L2a0G-TUvLfkHid8QDqWdH2O0G-nEWo"];
 p[12] = [prev + "1Xgl6d1PaEStSMNUSMVNPvgH2EnVdmQm3"];
 p[13] = [prev + "1VWujhnXDckNWxpWWoRVW7FG21Qza7yLg"];
 p[14] = [prev + "193u4Aa9OMEahy64zlpy0gQW2WkKFMcob"];
-//p[15] = [prev + "1mMtcv0tkHTUWawxSR4IDQNEjbfhPqPs3"];
+p[15] = [prev + "1mMtcv0tkHTUWawxSR4IDQNEjbfhPqPs3"];
 p[16] = [prev + "1dsTBr0uj-22-mewqrCOYNFahacrtoKlo"];
 p[17] = [prev + "1B6CckKOtU5kD-7RoNxC50tyMsA9cZ1Pg"];
 p[18] = [prev + "1nMI5x4CZIGOJE1Sf5zy-_s_yurvsFDKc"];
@@ -140,7 +140,10 @@ function settxt() {
     document.getElementById("fn").innerHTML = "Türchen: " + k[heute.getDate()];
 
     mypic.src = p[heute.getDate()];
+
     myVideo.src = v[heute.getDate()];
+    myvideo.play();
+  //  document.getElementById('video1').play();
   //    myVideo.preload = "auto";
 
   //     myVideo.play();
