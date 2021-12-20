@@ -8,7 +8,7 @@
 <link rel="stylesheet" media="(min-width: 640px)" href="html5_stylesheet.css">
 <link rel="stylesheet" media="print" href="print.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script src="myscriptweih.js"></script>
 </head>
 
 <body onload="settxt()">
@@ -20,74 +20,36 @@
 
 <aside>
 <nav>
-<picture>
-  <img src="ellenbogen.gif" alt="Armbruch" width="120" align = "right";">
-</picture>
+
 </nav>
 </aside>
 
 <main>
 <article>
-  <picture>
-    <img src="ellenbogen.gif" alt="Armbruch" width="120" align = "right";">
-  </picture>
-    <!--p id="fn">Video wählen</p-->
+    <p id="fn">Video wählen</p>
     <ul>
-    <li><button id="b1" onclick="changevid(1)"></button>
+    <li>
+    <button id="b1" onclick="changevid(1)"></button>
     <button id="b2" onclick="changevid(2)"></button>
-    <button id="bot" onclick="playPause()">Play/Pause</button></li>
+    <button id="bot" onclick="playPause()">Play/Pause</button>
+    <button id="b3" onclick="changevid(3)">Picture</button>
+    </li>
     </ul>
+
+    <picture>
+      <img  id = "picid">
+    </picture>
 
     <video autoplay controls id="video1" width="720">
       <source src="" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
+
     <h1>Das Bruttosozialprodukt misst alles,<br>
     nur nicht das,<br>
     was das Leben lebenswert macht.<br></h1>
     Robert F. Kennedy<br>
 
-    <picture>
-      <img src="ellenbogen.gif" alt="Armbruch" width="120";">
-    </picture>
-
-    <script>
-    var v = new Array();
-    var prev = "https://drive.google.com/uc?export=download&id=";
-
-    v[1] = [prev + "1F3oS8usip2DCSX9tZHxjjSmEFNR3GmaW"];
-    v[2] = [prev + "115OYq2mcne3TXbIdHYfY2TRwH6TRCqaY"];
-
-    var a = new Array();
-    a[1] = ["Video 1"];
-    a[2] = ["Video 2"];
-
-    var myVideo = document.getElementById("video1");
-
-    function playPause() {
-        if (myVideo.paused)
-            myVideo.play();
-        else
-            myVideo.pause();
-    }
-
-    function changevid(n) {myVideo.src = v[n];
-
-      document.getElementById("fn").innerHTML =  a[n];
-      //document.getElementById("na").innerHTML = "filename: " + a[n];
-      playPause();
-   }
-
-    function settxt() {
-      for (i = 1; i <= 2; i++) {
-        b = "b" + i;
-        document.getElementById(b).innerHTML = a[i];};
-        document.button.style.color = "#000000";
-                document.getElementById("b2").style.backgroundcolor  = "#000000";
-    }
-
-    function makeBig(n) {myVideo.width = n;}
-    </script>
 
 </article>
 unten
