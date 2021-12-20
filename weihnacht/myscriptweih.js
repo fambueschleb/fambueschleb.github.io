@@ -24,7 +24,7 @@ p[10] = [prevpic + "1uV70LnwG3B7pgPpe5Iz-y_jhVBMNrZON"];
 var a = new Array();
 a[1] = ["Video 1"];
 a[2] = ["Video 2"];
-a[3] = ["picture"];
+a[3] = ["nächstes Bild"];
 
 let zaehler = 0;
 let zaehlermax = 10;
@@ -57,8 +57,9 @@ if (zaehler < zaehlermax && n > 2) {
       else
       {zaehler = 1;}
 
-  document.getElementById("fn").innerHTML =  "Zaehler " + zaehler + " " + p[n] + " v: " + v[n];
+  //document.getElementById("fn").innerHTML =  "Zaehler " + zaehler + " " + p[n] + " v: " + v[n];
   document.getElementById("picid").src = p[zaehler];
+  document.getElementById("picid").style.height = "120";
   }
 
 function settxt() {
