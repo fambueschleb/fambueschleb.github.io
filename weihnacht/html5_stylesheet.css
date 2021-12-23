@@ -62,9 +62,15 @@ main {background-color:#ffffff;
 	float:left;
 	width:80%;}
 
-main h1 {font-size: x-large;
+main h1 {font-size: large;
  	margin-bottom: 10px;
-	margin-top: 0px;}
+	margin-top: 0px;
+  margin-left: 4px;}
+
+	main h2 {font-size: small;
+	 	margin-bottom: 10px;
+		margin-top: 0px;
+	  margin-left: 4px;}
 
 article {border: 1px solid grey;
 	border-radius:10px;
