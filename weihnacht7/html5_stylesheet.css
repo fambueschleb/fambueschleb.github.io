@@ -9,9 +9,9 @@ body {background-color:#ffffff;
 
 body a {color:#0066ff;}
 
-header {background-color:#fb4c98;
+header {background-color:#53ce8d;
 	color: #ffffff;
-	font-size: xx-large;
+	font-size: x-large;
 	font-style:italic;
 	font-weight:bolder;
 	padding: 10px;
@@ -80,10 +80,10 @@ article {border: 1px solid grey;
 	padding-right:20px;
 	padding-top:10px;}
 
-footer {background-color:#fb4c98;
+footer {background-color:#53ce8d;
 	clear:left;
 	color:#ffffff;
-	font-size:xx-large;
+	font-size:x-large;
 	font-style:italic;
 	font-weight:bolder;
 	padding-bottom:10px;
