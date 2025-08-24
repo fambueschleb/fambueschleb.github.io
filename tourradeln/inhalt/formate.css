@@ -1,0 +1,24 @@
+h1	{ font-family:Arial; font-size:16pt; color:#cc0033; }
+h2	{ font-family:Arial; font-size:21pt; color:#cc0033; }
+h3	{ font-family:Arial; font-size:36pt; color:#cc0033; }
+
+p, td, span	{ font-family:Arial; font-size:12pt; color:#cc0033; }
+p.g, td.g, span.g	{ font-family:Arial; font-size:14pt; color:#cc0033; }
+p.k, td.k, span.k	{ font-family:Arial; font-size:7pt; color:#cc0033; }
+
+body { background-color:##ffffff;  }
+
+td.fuss { background-color:#d8cdeb; border-color:#0099ff; border-width:3px; border-style:solid; }
+
+tr.kopf { background-color:#00ffff; }
+tr.z1   { background-color:#ffff80; }
+tr.z2   { background-color:#efefef; }
+tr.z3   { background-color:#dfdfdf; }
+
+table.inh1 {background-color:#e5e5e5;  }
+table.inh2 {background-color:#e5e5e5;  }
+
+hr.a  { height:5px;  }
+
+
+
